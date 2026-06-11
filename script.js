@@ -2,12 +2,15 @@
 const page1 = document.querySelector(".page1");
 const page2 = document.querySelector(".page2");
 const page3 = document.querySelector(".page3");
+
 const inscription = document.getElementById("insc");
 const connecter = document.getElementById("btn1");
 const inscrire = document.getElementById("btnInscription");
+
 const nom = document.getElementById("nom");
 const email = document.getElementById("email");
 const mdp = document.getElementById("password");
+
 const emailConnexion = document.getElementById("input1");
 const mdpConnexion = document.getElementById("input2");
 
@@ -20,21 +23,16 @@ inscription.addEventListener(
     }
 );
 
-
 inscrire.addEventListener(
     "click",
     () => {
         const ustlisateur = {
-            nom: nom.value,
-            email: email.value,
-            mtdp: mdp.value
+            nom: nom,
+            email: email,
+            mtdp: mdp
         }
-
         const ut = JSON.stringify(ustlisateur);
-        localStorage.setItem(
-            "bamba",
-            JSON.stringify(ustlisateur)
-        );
+          localStorage.setItem("bamba",JSON.stringify(ustlisateur));
 
         if (
             nom.value === "" || email.value === "" || mdp.value === ""
@@ -51,15 +49,13 @@ inscrire.addEventListener(
 connecter.addEventListener(
     "click",
     () => {
-        const bamba = JSON.parse(localStorage.getItem("bamba")
-        );
+        const bamba = JSON.parse(localStorage.getItem("bamba") );
         if (bamba === null) {
             alert("Aucun compte enregistré");
             return;
         }
         if (
-            emailConnexion.value === bamba.email &&
-            mdpConnexion.value === bamba.mtdp
+            emailConnexion.value === bamba.email && mdpConnexion.value === bamba.mtdp
         ) {
         page1.style.display = "none";
         page3.style.display = "flex";
