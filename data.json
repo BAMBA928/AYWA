@@ -1,0 +1,77 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "nom": "Bamba",
+      "email": "bamba@gmail.com",
+      "password": "1234"
+    },
+    {
+      "nom": "baba",
+      "email": "baba",
+      "password": "baba",
+      "id": "6mqyKm6YCA0"
+    },
+    {
+      "nom": "baba",
+      "email": "baba",
+      "password": "bab",
+      "id": "bT7nOtodOxQ"
+    },
+    {
+      "nom": "ban",
+      "email": "ban",
+      "password": "ban",
+      "id": "T8OYfjaoR8g"
+    },
+    {
+      "nom": "",
+      "email": "",
+      "password": "",
+      "id": "S6OYtAsPGUM"
+    },
+    {
+      "nom": "bb",
+      "email": "bb",
+      "password": "bb",
+      "id": "aPslp2OYHU0"
+    },
+    {
+      "nom": "",
+      "email": "",
+      "password": "",
+      "id": "HrFxOp6Xybo"
+    },
+    {
+      "nom": "",
+      "email": "",
+      "password": "",
+      "id": "Ludk_hLyU7I"
+    },
+    {
+      "nom": "",
+      "email": "",
+      "password": "",
+      "id": "cGlicim7mn4"
+    },
+    {
+      "nom": "",
+      "email": "",
+      "password": "",
+      "id": "x8j77OqSHmc"
+    },
+    {
+      "nom": "",
+      "email": "",
+      "password": "",
+      "id": "JsF53N8F9wQ"
+    },
+    {
+      "nom": "ba",
+      "email": "bb",
+      "password": "bb",
+      "id": "lMNF9dYaiUA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
